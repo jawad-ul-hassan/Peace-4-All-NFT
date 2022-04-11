@@ -242,7 +242,8 @@ a {
   font-size: 1.8rem;
 }
 
-.discord-link {
+.discord-link,
+.banner-green-link {
   color: #5865f2;
   font-weight: 600;
 }
