@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: #f1f1f1;
+  color: #121212;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  max-width: 136rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header-brand-logo {
+  display: block;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: #ff8c32;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  column-gap: 2.5rem;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: 300ms ease;
+}
+
+.nav-link:hover {
+  color: #ff8c32;
+}
+
+.header-social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.header-social-link {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 1.8rem;
+  transition: 300ms ease;
+}
+
+.header-social-link:hover {
+  background-color: #ff8c32;
+  color: #fafafa;
+}
+
+/* Hero-Section */
+.hero {
+  margin-top: 8.2rem;
+}
+
+.hero-title {
+  font-size: 6.2rem;
+  font-weight: 700;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 1.8rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.hero-images {
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.nft-hero-img {
+  flex: 1 1 24%;
+  display: block;
+  width: 30rem;
+  border-radius: 1.2rem;
+}
