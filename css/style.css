@@ -679,13 +679,13 @@ a {
     justify-content: center;
     align-items: center;
     column-gap: 3.5rem;
-    margin: 1.5rem auto;
+    margin: 0.85rem auto;
   }
 
   .header-social-link-mobile {
     display: block;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
