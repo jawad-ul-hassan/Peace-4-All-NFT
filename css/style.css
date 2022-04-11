@@ -449,6 +449,7 @@ a {
   display: flex;
   justify-content: center;
   column-gap: 5rem;
+  row-gap: 3.5rem;
   flex-wrap: wrap;
 }
 
@@ -563,6 +564,24 @@ a {
   .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
+
+  .project-content,
+  .buy-content,
+  .work-content {
+    flex-direction: column;
+  }
+
+  .project-image,
+  .work-image {
+    order: 2;
+  }
+
+  .project-image > img,
+  .buy-image > img,
+  .work-image > img {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 650px) {
@@ -586,5 +605,51 @@ a {
 
   .hero-text {
     font-size: 1.6rem;
+  }
+
+  .project-image > img,
+  .buy-image > img,
+  .work-image > img {
+    width: 100%;
+  }
+
+  .btn-buy {
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+
+  .banner-green {
+    padding: 1.5rem;
+  }
+
+  .banner-green-desc {
+    font-size: 1.8rem;
+
+    text-align: center;
+  }
+
+  .banner-green-img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .banner-green-img > img {
+    width: 9rem;
+    object-fit: cover;
+  }
+
+  .footer-content {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .project-image,
+  .project-desc,
+  .buy-image,
+  .buy-desc,
+  .work-desc,
+  .work-image {
+    padding: 2.5rem 0;
   }
 }
