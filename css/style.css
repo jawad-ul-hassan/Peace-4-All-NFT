@@ -59,6 +59,13 @@ a {
   color: #ff8c32;
 }
 
+.header-brand-logo-sp {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #777777;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -70,7 +77,8 @@ a {
 .navbar {
   display: flex;
   align-items: center;
-  column-gap: 2.5rem;
+  column-gap: 3.5rem;
+  transition: 300ms ease;
 }
 
 .nav-link {
@@ -109,16 +117,22 @@ a {
   color: #fafafa;
 }
 
+#mobile-menu {
+  display: none;
+}
+
 /* Hero-Section */
 .hero {
   margin-top: 8.2rem;
 }
 
 .hero-title {
+  font-family: 'Abril Fatface', cursive;
   font-size: 6.2rem;
-  font-weight: 700;
+  font-weight: 400;
   padding-top: 2.5rem;
   text-align: center;
+  color: #ff8c32;
 }
 
 .hero-text {
@@ -138,6 +152,259 @@ a {
 .nft-hero-img {
   flex: 1 1 24%;
   display: block;
-  width: 30rem;
+  width: 25rem;
   border-radius: 1.2rem;
+}
+
+/* Project-Section */
+
+.border-line {
+  border-top: 2px dashed #cccccc;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.project {
+  margin: 8rem 0;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.project-image,
+.project-desc {
+  flex: 1 1 25%;
+  padding: 2.5rem;
+}
+
+.project-image > img {
+  display: block;
+  width: 100%;
+}
+
+.project-title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #ff8c32;
+}
+
+.project-text {
+  font-size: 1.8rem;
+}
+
+/* buy-Section */
+
+.buy {
+  margin: 8rem 0;
+}
+
+.buy-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.buy-image,
+.buy-desc {
+  flex: 1 1 25%;
+  padding: 2.5rem;
+}
+
+.buy-image > img {
+  display: block;
+  width: 100%;
+}
+
+.buy-title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #ff8c32;
+}
+
+.buy-text {
+  font-size: 1.8rem;
+}
+
+.discord-link {
+  color: #5865f2;
+  font-weight: 600;
+}
+
+.discord-link:hover {
+  text-decoration: underline;
+}
+
+.btn-buy {
+  display: block;
+  width: 15rem;
+  padding: 1.2rem;
+  background-color: #f1f1f1;
+  border-radius: 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #ff8c32;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 300ms ease;
+}
+
+.btn-buy:hover {
+  background-color: #ff8c32;
+  color: #f1f1f1;
+}
+
+/* work-Section */
+
+.work {
+  margin: 8rem 0;
+}
+
+.work-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.work-image,
+.work-desc {
+  flex: 1 1 25%;
+  padding: 2.5rem;
+}
+
+.work-image > img {
+  display: block;
+  width: 100%;
+}
+
+.work-title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  position: relative;
+  color: #ff8c32;
+}
+
+.work-text {
+  font-size: 1.8rem;
+}
+
+.mt-para {
+  margin-top: 1.5rem;
+}
+
+/* Banner-Green */
+
+.banner-green {
+  background-color: #d0d5e0;
+  padding: 3.5rem;
+  position: relative;
+  margin-top: 12rem;
+}
+
+.banner-green-img {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1fb81f;
+  margin: 0 auto;
+  margin-top: -10rem;
+  background-color: #d0d5e0;
+}
+
+.banner-green-img > img {
+  display: block;
+  width: 11rem;
+}
+
+.banner-green-desc {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  text-align: justify;
+  margin-top: 2.5rem;
+}
+
+/* --------------Responsive Styles--------------- */
+@media (max-width: 991px) {
+  #mobile-menu {
+    display: block;
+    font-size: 2.4rem;
+    cursor: pointer;
+    width: 2.4rem;
+  }
+
+  .header-socials,
+  .header-search-bar {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 98%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f1f1f1;
+    padding: 1.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    z-index: 12;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .nav-link {
+    padding: 0.75rem;
+  }
+
+  .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@media (max-width: 650px) {
+  .header-social-links {
+    display: none;
+  }
+
+  .nft-hero-img {
+    width: 17rem;
+  }
+
+  .hero-images {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-title {
+    font-size: 4.2rem;
+  }
+
+  .hero-text {
+    font-size: 1.6rem;
+  }
 }
