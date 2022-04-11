@@ -22,6 +22,7 @@ body {
   color: #121212;
   overflow-x: hidden;
   overflow-y: auto;
+  position: relative;
 }
 
 ul {
@@ -119,6 +120,10 @@ a {
 }
 
 #mobile-menu {
+  display: none;
+}
+
+.header-social-link-mobile {
   display: none;
 }
 
@@ -529,6 +534,85 @@ a {
   text-align: center;
 }
 
+/* Social-Sidebar */
+
+.menu {
+  z-index: 999;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.menu .share i.fa {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.menu .share:hover.top .submenu li:nth-child(1) {
+  opacity: 1;
+  top: -51px;
+  transition-delay: 0.08s;
+  transform: rotateY(0deg);
+  border-bottom: 1px dashed #d9d9d9;
+}
+.menu .share:hover.top .submenu li:nth-child(2) {
+  opacity: 1;
+  top: -102px;
+  transition-delay: 0.16s;
+  transform: rotateY(0deg);
+  border-bottom: 1px dashed #d9d9d9;
+}
+
+.menu .submenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu .submenu li {
+  transition: all ease-in-out 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.menu .submenu li a {
+  color: #212121;
+}
+
+.menu .submenu li a:hover i.fa {
+  color: #fff;
+}
+
+.menu .submenu li a:hover.facebook i.fa {
+  background-color: #3b5999;
+}
+
+.menu .submenu li a:hover.twitter i.fa {
+  background-color: #55acee;
+}
+
+.menu .submenu li:nth-child(1) {
+  transform: rotateX(45deg);
+}
+
+.menu .submenu li:nth-child(2) {
+  transform: rotateX(90deg);
+}
+
+.menu.bottomRight {
+  bottom: 10px;
+  right: 10px;
+}
+
 /* --------------Responsive Styles--------------- */
 @media (max-width: 991px) {
   #mobile-menu {
@@ -588,6 +672,33 @@ a {
 @media (max-width: 650px) {
   .header-social-links {
     display: none;
+  }
+
+  .header-social-links-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3.5rem;
+    margin: 1.5rem auto;
+  }
+
+  .header-social-link-mobile {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 1.8rem;
+    transition: 300ms ease;
+  }
+
+  .header-social-link-mobile:hover {
+    background-color: #ff8c32;
+    color: #fafafa;
   }
 
   .nft-hero-img {
